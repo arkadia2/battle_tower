@@ -1,2 +1,108 @@
+# Unreal Engine 通用忽略规则
+# 编译产物
+Binaries/
+Build/
+DerivedDataCache/
+Intermediate/
+Saved/
 
+# 项目生成的解决方案和项目文件（C++项目）
+*.sln
+*.suo
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.xcodeproj
+*.xcworkspace
+*.sln.DotSettings.user
+
+# 日志和缓存文件
+*.log
+*.bak
+*.cache
+*.db
+*.opensdf
+*.sdf
+*.suo
+*.user
+*.ipch
+*.pid
+*.minidump
+*.stackdump
+
+# 平台特定文件
+# Windows
+*.ilk
+*.pdb
+*.exp
+*.lib
+*.obj
+*.pch
+*.idb
+*.manifest
+*.res
+*.tlog
+*.lastbuildstate
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# macOS
+.DS_Store
+*.dSYM/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Linux
+*.o
+*.a
+*.so
+*.out
+*.gch
+*.swp
+*.swo
+
+# Unreal Engine 特定文件
+# 插件临时文件
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+Plugins/*/Saved/
+
+# 模块临时文件
+Source/*/Binaries/
+Source/*/Intermediate/
+
+# 蓝图和资源的临时数据（如果使用Git LFS管理资源，可保留.uasset和.umap）
+# 注意：如果需要跟踪资源，移除下面两行
+# *.uasset
+# *.umap
+
+# 个人配置
+Config/DefaultEditorPerProjectUserSettings.ini
+Config/DefaultUserSettings.ini
+Saved/Config/
+
+# 打包输出
+Packaged/
+
+# 第三方工具生成的文件
+.vs/
+.idea/
+.vscode/
+*.code-workspace
+
+# 其他临时文件
+*~
+__pycache__/
 *.pyc
+*.pyo
